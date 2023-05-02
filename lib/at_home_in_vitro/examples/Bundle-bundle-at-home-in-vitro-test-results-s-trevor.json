@@ -1,0 +1,710 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "bundle-at-home-in-vitro-test-results-s-trevor",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test"]
+  },
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:683dde44f7664b03a20b6324f23986d8"
+  },
+  "type" : "message",
+  "timestamp" : "2021-01-28T16:07:15-05:00",
+  "entry" : [{
+    "fullUrl" : "https://fhir.org/fhir/MessageHeader/messageheader-at-home-in-vitro-test-s-trevor",
+    "resource" : {
+      "resourceType" : "MessageHeader",
+      "id" : "messageheader-at-home-in-vitro-test-s-trevor",
+      "meta" : {
+        "versionId" : "2",
+        "lastUpdated" : "2023-01-26T22:41:41.871+00:00",
+        "source" : "#7uPOAfaywEsWK4x3",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n              <b>Generated Narrative: MessageHeader</b>\n              <a name=\"messageheader-at-home-in-vitro-test-s-trevor\"> </a>\n            </p>\n            <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">\n              <p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;messageheader-at-home-in-vitro-test-s-trevor&quot; Version &quot;2&quot; Updated &quot;2023-01-26 22:41:41+0000&quot; </p>\n              <p style=\"margin-bottom: 0px\">Information Source: #7uPOAfaywEsWK4x3!</p>\n              <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeader-at-home-in-vitro-test-results.html\">MessageHeader - At-Home In-Vitro Test Results</a></p>\n            </div>\n            <p><b>event</b>: Result of most recent lab test for condition of interest (Details: LOINC code 96552-5 = 'Result of most recent lab test for condition of interest', stated as 'null')</p>\n            <h3>Sources</h3>\n            <table class=\"grid\">\n              <tr>\n                <td>-</td>\n                <td>\n                  <b>Extension</b>\n                </td>\n                <td>\n                  <b>Name</b>\n                </td>\n                <td>\n                  <b>Software</b>\n                </td>\n                <td>\n                  <b>Endpoint</b>\n                </td>\n              </tr>\n              <tr>\n                <td>*</td>\n                <td/>\n                <td>ACMELIMS PH</td>\n                <td>ACMELIMS PH</td>\n                <td>\n                  <a href=\"http://at-home-in-vitro-test.org/fhir/endpoint/1\">http://at-home-in-vitro-test.org/fhir/endpoint/1</a>\n                </td>\n              </tr>\n            </table>\n            <p><b>focus</b>: <a href=\"DiagnosticReport-diagnosticreport-at-home-in-vitro-results-covid-s-trevor.html\">DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-s-trevor</a></p>\n          </div>"
+      },
+      "eventCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "96552-5"
+      },
+      "source" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-source-software-info",
+          "extension" : [{
+            "url" : "vendorOrganization",
+            "valueReference" : {
+              "reference" : "Organization/us-core-organization-reliable-informatics"
+            }
+          },
+          {
+            "url" : "softwareBinaryID",
+            "valueString" : "Binary ID unknown"
+          }]
+        }],
+        "name" : "ACMELIMS PH",
+        "software" : "ACMELIMS PH",
+        "endpoint" : "http://at-home-in-vitro-test.org/fhir/endpoint/1"
+      },
+      "focus" : [{
+        "reference" : "DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-s-trevor"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.org/fhir/DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-s-trevor",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "diagnosticreport-at-home-in-vitro-results-covid-s-trevor",
+      "meta" : {
+        "versionId" : "2",
+        "lastUpdated" : "2023-01-26T22:33:19.818+00:00",
+        "source" : "#Ge55aDZCqn1xIV3N",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results-covid"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <div class=\"hapiHeaderText\"> SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay </div>\n            <table class=\"hapiPropertyTable\">\n              <tbody>\n                <tr>\n                  <td>Status</td>\n                  <td>FINAL</td>\n                </tr>\n                <tr>\n                  <td>Issued</td>\n                  <td> 28 January 2021 21:06:21 </td>\n                </tr>\n              </tbody>\n            </table>\n          </div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+        "extension" : [{
+          "url" : "type",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0936",
+              "code" : "QST",
+              "display" : "Question"
+            }]
+          }
+        },
+        {
+          "url" : "reference",
+          "valueReference" : {
+            "reference" : "Observation/observation-patient-answer-first-test-s-trevor",
+            "display" : "Whether this is the patient's first test for the condition of interest: No"
+          }
+        }]
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+        "extension" : [{
+          "url" : "type",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0936",
+              "code" : "QST",
+              "display" : "Question"
+            }]
+          }
+        },
+        {
+          "url" : "reference",
+          "valueReference" : {
+            "reference" : "Observation/observation-patient-answer-employed-healthcare-s-trevor",
+            "display" : "Whether patient is employed in a healthcare setting: No"
+          }
+        }]
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+        "extension" : [{
+          "url" : "type",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0936",
+              "code" : "QST",
+              "display" : "Question"
+            }]
+          }
+        },
+        {
+          "url" : "reference",
+          "valueReference" : {
+            "reference" : "Observation/observation-patient-answer-symptoms-present-covid-s-trevor",
+            "display" : "Whether patient has symptoms related to condition of interest: Yes"
+          }
+        }]
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+        "extension" : [{
+          "url" : "type",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0936",
+              "code" : "QST",
+              "display" : "Question"
+            }]
+          }
+        },
+        {
+          "url" : "reference",
+          "valueReference" : {
+            "reference" : "Observation/observation-patient-answer-hospitalized-s-trevor",
+            "display" : "Whether patient was hospitalized because of this condition: No"
+          }
+        }]
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+        "extension" : [{
+          "url" : "type",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0936",
+              "code" : "QST",
+              "display" : "Question"
+            }]
+          }
+        },
+        {
+          "url" : "reference",
+          "valueReference" : {
+            "reference" : "Observation/observation-patient-answer-congregate-s-trevor",
+            "display" : "Whether patient resides in a congregate care setting: Yes"
+          }
+        }]
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+        "extension" : [{
+          "url" : "type",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0936",
+              "code" : "QST",
+              "display" : "Question"
+            }]
+          }
+        },
+        {
+          "url" : "reference",
+          "valueReference" : {
+            "reference" : "Observation/observation-patient-answer-pregnancy-s-trevor",
+            "display" : "Pregnancy status: Not pregnant"
+          }
+        }]
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "LAB",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "95209-3",
+          "display" : "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-at-home-in-vitro-test-stacy-trevor",
+        "display" : "Stacy Trevor"
+      },
+      "effectiveDateTime" : "2021-01-28T11:45:33+11:00",
+      "issued" : "2021-01-28T16:06:21-05:00",
+      "result" : [{
+        "reference" : "Observation/observation-at-home-in-vitro-test-result-covid-s-trevor",
+        "display" : "SARS-CoV+SARS-CoV-2"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.org/fhir/Observation/observation-at-home-in-vitro-test-result-covid-s-trevor",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-at-home-in-vitro-test-result-covid-s-trevor",
+      "meta" : {
+        "versionId" : "1",
+        "lastUpdated" : "2023-01-26T22:14:40.519+00:00",
+        "source" : "#zinBI6yFGAuJQfTe",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result-covid"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n              <b>Generated Narrative: Observation</b>\n              <a name=\"observation-at-home-in-vitro-test-result-covid-s-trevor\"> </a>\n            </p>\n            <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">\n              <p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-at-home-in-vitro-test-result-covid-s-trevor&quot; Version &quot;1&quot; Updated &quot;2023-01-26 22:14:40+0000&quot; </p>\n              <p style=\"margin-bottom: 0px\">Information Source: #zinBI6yFGAuJQfTe!</p>\n              <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-at-home-in-vitro-test-result-covid.html\">Observation - At-Home In-Vitro Test Result - COVID-19</a></p>\n            </div>\n            <p><b>status</b>: final</p>\n            <p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p>\n            <p><b>code</b>: SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/95209-3\">LOINC</a>#95209-3)</span></p>\n            <p><b>subject</b>: <a href=\"Patient-patient-at-home-in-vitro-test-stacy-trevor.html\">Patient/patient-at-home-in-vitro-test-stacy-trevor: Stacy Trevor</a> &quot; TREVOR&quot;</p>\n            <p><b>effective</b>: 2021-01-28 16:06:21-0500</p>\n            <p><b>value</b>: Detected <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#260373001)</span></p>\n            <p><b>specimen</b>: <a href=\"Specimen-specimen-swab-internal-nose-s-trevor.html\">Specimen/specimen-swab-internal-nose-s-trevor: P21-0000105078OneReliableSol.STAG</a></p>\n            <p><b>device</b>: <a href=\"Device-device-hometest1-s-trevor.html\">Device/device-hometest1-s-trevor: Acme COVID-19 Home Test_Acme Limited</a></p>\n          </div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }],
+        "text" : "Laboratory"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "95209-3",
+          "display" : "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"
+        }],
+        "text" : "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-at-home-in-vitro-test-stacy-trevor",
+        "display" : "Stacy Trevor"
+      },
+      "effectiveDateTime" : "2021-01-28T16:06:21-05:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "260373001",
+          "display" : "Detected"
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/specimen-swab-internal-nose-s-trevor",
+        "display" : "P21-0000105078OneReliableSol.STAG"
+      },
+      "device" : {
+        "reference" : "Device/device-hometest1-s-trevor",
+        "display" : "Acme COVID-19 Home Test_Acme Limited"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.org/fhir/Observation/observation-patient-answer-symptoms-present-covid-s-trevor",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-patient-answer-symptoms-present-covid-s-trevor",
+      "meta" : {
+        "versionId" : "1",
+        "lastUpdated" : "2023-01-26T22:14:40.524+00:00",
+        "source" : "#lfKCMMJjTs4Rs37D",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n              <b>Generated Narrative: Observation</b>\n              <a name=\"observation-patient-answer-symptoms-present-covid-s-trevor\"> </a>\n            </p>\n            <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">\n              <p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-patient-answer-symptoms-present-covid-s-trevor&quot; Version &quot;1&quot; Updated &quot;2023-01-26 22:14:40+0000&quot; </p>\n              <p style=\"margin-bottom: 0px\">Information Source: #lfKCMMJjTs4Rs37D!</p>\n              <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-patient-question-answer.html\">Observation - Patient Question Answer</a></p>\n            </div>\n            <p><b>status</b>: final</p>\n            <p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p>\n            <p><b>code</b>: Whether the patient has symptoms related to condition of interest <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/95419-8\">LOINC</a>#95419-8)</span></p>\n            <p><b>subject</b>: <a href=\"Patient-patient-at-home-in-vitro-test-stacy-trevor.html\">Patient/patient-at-home-in-vitro-test-stacy-trevor: Stacy Trevor</a> &quot; TREVOR&quot;</p>\n            <p><b>effective</b>: 2021-01-28 16:06:03-0500</p>\n            <p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a>#Y)</span></p>\n          </div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }],
+        "text" : "Survey"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "95419-8",
+          "display" : "Whether the patient has symptoms related to condition of interest"
+        }],
+        "text" : "Whether the patient has symptoms related to condition of interest"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-at-home-in-vitro-test-stacy-trevor",
+        "display" : "Stacy Trevor"
+      },
+      "effectiveDateTime" : "2021-01-28T16:06:03-05:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+          "code" : "Y",
+          "display" : "Yes"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.org/fhir/Observation/observation-patient-answer-hospitalized-s-trevor",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-patient-answer-hospitalized-s-trevor",
+      "meta" : {
+        "versionId" : "2",
+        "lastUpdated" : "2023-01-26T22:45:04.344+00:00",
+        "source" : "#HFkhZJ9OUCagztur",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n              <b>Generated Narrative: Observation</b>\n              <a name=\"observation-patient-answer-hospitalized-s-trevor\"> </a>\n            </p>\n            <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">\n              <p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-patient-answer-hospitalized-s-trevor&quot; Version &quot;2&quot; Updated &quot;2023-01-26 22:45:04+0000&quot; </p>\n              <p style=\"margin-bottom: 0px\">Information Source: #HFkhZJ9OUCagztur!</p>\n              <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-patient-question-answer.html\">Observation - Patient Question Answer</a></p>\n            </div>\n            <p><b>status</b>: final</p>\n            <p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p>\n            <p><b>code</b>: Whether the patient was hospitalized for condition of interest <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/77974-4\">LOINC</a>#77974-4)</span></p>\n            <p><b>subject</b>: <a href=\"Patient-patient-at-home-in-vitro-test-stacy-trevor.html\">Patient/patient-at-home-in-vitro-test-stacy-trevor: Stacy Trevor</a> &quot; TREVOR&quot;</p>\n            <p><b>effective</b>: 2021-01-28 16:06:03-0500</p>\n            <p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a>#N)</span></p>\n          </div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }],
+        "text" : "Survey"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "77974-4",
+          "display" : "Whether the patient was hospitalized for condition of interest"
+        }],
+        "text" : "Whether the patient was hospitalized for condition of interest"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-at-home-in-vitro-test-stacy-trevor",
+        "display" : "Stacy Trevor"
+      },
+      "effectiveDateTime" : "2021-01-28T16:06:03-05:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+          "code" : "N",
+          "display" : "No"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.org/fhir/Observation/observation-patient-answer-congregate-s-trevor",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-patient-answer-congregate-s-trevor",
+      "meta" : {
+        "versionId" : "1",
+        "lastUpdated" : "2023-01-26T22:14:40.525+00:00",
+        "source" : "#gqS1fGnjiCaUi3OM",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n              <b>Generated Narrative: Observation</b>\n              <a name=\"observation-patient-answer-congregate-s-trevor\"> </a>\n            </p>\n            <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">\n              <p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-patient-answer-congregate-s-trevor&quot; Version &quot;1&quot; Updated &quot;2023-01-26 22:14:40+0000&quot; </p>\n              <p style=\"margin-bottom: 0px\">Information Source: #gqS1fGnjiCaUi3OM!</p>\n              <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-patient-question-answer.html\">Observation - Patient Question Answer</a></p>\n            </div>\n            <p><b>status</b>: final</p>\n            <p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p>\n            <p><b>code</b>: Whether patient resides in a congregate care setting <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/95421-4\">LOINC</a>#95421-4)</span></p>\n            <p><b>subject</b>: <a href=\"Patient-patient-at-home-in-vitro-test-stacy-trevor.html\">Patient/patient-at-home-in-vitro-test-stacy-trevor: Stacy Trevor</a> &quot; TREVOR&quot;</p>\n            <p><b>effective</b>: 2021-01-28 16:06:03-0500</p>\n            <p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a>#Y)</span></p>\n          </div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }],
+        "text" : "Survey"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "95421-4",
+          "display" : "Whether patient resides in a congregate care setting"
+        }],
+        "text" : "Whether patient resides in a congregate care setting"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-at-home-in-vitro-test-stacy-trevor",
+        "display" : "Stacy Trevor"
+      },
+      "effectiveDateTime" : "2021-01-28T16:06:03-05:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+          "code" : "Y",
+          "display" : "Yes"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.org/fhir/Observation/observation-patient-answer-employed-healthcare-s-trevor",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-patient-answer-employed-healthcare-s-trevor",
+      "meta" : {
+        "versionId" : "2",
+        "lastUpdated" : "2023-01-26T22:43:34.963+00:00",
+        "source" : "#JSpmpl8a7Yhg2kNv",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n              <b>Generated Narrative: Observation</b>\n              <a name=\"observation-patient-answer-employed-healthcare-s-trevor\"> </a>\n            </p>\n            <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">\n              <p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-patient-answer-employed-healthcare-s-trevor&quot; Version &quot;2&quot; Updated &quot;2023-01-26 22:43:34+0000&quot; </p>\n              <p style=\"margin-bottom: 0px\">Information Source: #JSpmpl8a7Yhg2kNv!</p>\n              <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-patient-question-answer.html\">Observation - Patient Question Answer</a></p>\n            </div>\n            <p><b>status</b>: final</p>\n            <p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p>\n            <p><b>code</b>: Whether patient is employed in a healthcare setting <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/95418-0\">LOINC</a>#95418-0)</span></p>\n            <p><b>subject</b>: <a href=\"Patient-patient-at-home-in-vitro-test-stacy-trevor.html\">Patient/patient-at-home-in-vitro-test-stacy-trevor: Stacy Trevor</a> &quot; TREVOR&quot;</p>\n            <p><b>effective</b>: 2021-01-28 16:06:03-0500</p>\n            <p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a>#N)</span></p>\n          </div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }],
+        "text" : "Survey"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "95418-0",
+          "display" : "Whether patient is employed in a healthcare setting"
+        }],
+        "text" : "Whether patient is employed in a healthcare setting"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-at-home-in-vitro-test-stacy-trevor",
+        "display" : "Stacy Trevor"
+      },
+      "effectiveDateTime" : "2021-01-28T16:06:03-05:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+          "code" : "N",
+          "display" : "No"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.org/fhir/Observation/observation-patient-answer-first-test-s-trevor",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-patient-answer-first-test-s-trevor",
+      "meta" : {
+        "versionId" : "2",
+        "lastUpdated" : "2023-01-26T22:44:27.266+00:00",
+        "source" : "#N2XwtOKvNJsa2Scu",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n              <b>Generated Narrative: Observation</b>\n              <a name=\"observation-patient-answer-first-test-s-trevor\"> </a>\n            </p>\n            <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">\n              <p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-patient-answer-first-test-s-trevor&quot; Version &quot;2&quot; Updated &quot;2023-01-26 22:44:27+0000&quot; </p>\n              <p style=\"margin-bottom: 0px\">Information Source: #N2XwtOKvNJsa2Scu!</p>\n              <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-patient-question-answer.html\">Observation - Patient Question Answer</a></p>\n            </div>\n            <p><b>status</b>: final</p>\n            <p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p>\n            <p><b>code</b>: Whether this is the patient's first test for condition of interest <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/95417-2\">LOINC</a>#95417-2)</span></p>\n            <p><b>subject</b>: <a href=\"Patient-patient-at-home-in-vitro-test-stacy-trevor.html\">Patient/patient-at-home-in-vitro-test-stacy-trevor: Stacy Trevor</a> &quot; TREVOR&quot;</p>\n            <p><b>effective</b>: 2021-01-28 16:06:03-0500</p>\n            <p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a>#N)</span></p>\n          </div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }],
+        "text" : "Survey"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "95417-2",
+          "display" : "Whether this is the patient's first test for condition of interest"
+        }],
+        "text" : "Whether this is the patient's first test for condition of interest"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-at-home-in-vitro-test-stacy-trevor",
+        "display" : "Stacy Trevor"
+      },
+      "effectiveDateTime" : "2021-01-28T16:06:03-05:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+          "code" : "N",
+          "display" : "No"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.org/fhir/Observation/observation-patient-answer-pregnancy-s-trevor",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-patient-answer-pregnancy-s-trevor",
+      "meta" : {
+        "versionId" : "1",
+        "lastUpdated" : "2023-01-26T22:14:40.518+00:00",
+        "source" : "#YCOTptFf2QBL6SPy",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n              <b>Generated Narrative: Observation</b>\n              <a name=\"observation-patient-answer-pregnancy-s-trevor\"> </a>\n            </p>\n            <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">\n              <p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-patient-answer-pregnancy-s-trevor&quot; Version &quot;1&quot; Updated &quot;2023-01-26 22:14:40+0000&quot; </p>\n              <p style=\"margin-bottom: 0px\">Information Source: #YCOTptFf2QBL6SPy!</p>\n              <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-patient-question-answer.html\">Observation - Patient Question Answer</a></p>\n            </div>\n            <p><b>status</b>: final</p>\n            <p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p>\n            <p><b>code</b>: Pregnancy status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/82810-3\">LOINC</a>#82810-3)</span></p>\n            <p><b>subject</b>: <a href=\"Patient-patient-at-home-in-vitro-test-stacy-trevor.html\">Patient/patient-at-home-in-vitro-test-stacy-trevor: Stacy Trevor</a> &quot; TREVOR&quot;</p>\n            <p><b>effective</b>: 2021-01-28 16:06:03-0500</p>\n            <p><b>value</b>: Not pregnant (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#60001007)</span></p>\n          </div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }],
+        "text" : "Survey"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "82810-3",
+          "display" : "Pregnancy status"
+        }],
+        "text" : "Pregnancy status"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-at-home-in-vitro-test-stacy-trevor",
+        "display" : "Stacy Trevor"
+      },
+      "effectiveDateTime" : "2021-01-28T16:06:03-05:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "60001007",
+          "display" : "Not pregnant (finding)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.org/fhir/Patient/patient-at-home-in-vitro-test-stacy-trevor",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-at-home-in-vitro-test-stacy-trevor",
+      "meta" : {
+        "versionId" : "2",
+        "lastUpdated" : "2023-01-26T22:49:49.626+00:00",
+        "source" : "#m0lIVlIgfqsr1jaz",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Stacy Trevor </b> female, DoB: 1988-01-21 ( Medical Record Number: P21-0000105078 (use: USUAL))</p>\n            <hr/>\n            <table class=\"grid\">\n              <tr>\n                <td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td>\n                <td colspan=\"3\">true</td>\n              </tr>\n              <tr>\n                <td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td>\n                <td colspan=\"3\">\n                  <ul>\n                    <li>ph: 947-226-0356(HOME)</li>\n                    <li>11 Norman Drive Palatine IL 60067 US </li>\n                  </ul>\n                </td>\n              </tr>\n              <tr>\n                <td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td>\n                <td colspan=\"3\">\n                  <ul>\n                    <li>ombCategory: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK\">NullFlavor</a> UNK: Unknown</li>\n                    <li>text: Unknown</li>\n                  </ul>\n                </td>\n              </tr>\n              <tr>\n                <td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:                          - American Indian or Alaska Native             - Asian             - Black or African American             - Native Hawaiian or Other Pacific Islander             - White.\">US Core Race Extension:</td>\n                <td colspan=\"3\">\n                  <ul>\n                    <li>ombCategory: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-CDCREC.html#CDCREC-2054-5\">CDC Race and Ethnicity</a> 2054-5: Black or African American</li>\n                    <li>text: Black or African American</li>\n                  </ul>\n                </td>\n              </tr>\n              <tr>\n                <td style=\"background-color: #f3f5da\" title=\"This extension is a copy of the not-yet-published 6.0.0-ballot version US Core Sex for Clinical Use, which aligns with FHIR R5 [sexForClinicalUse extension](http://hl7.org/fhir/2022Sep/extension-patient-sexforclinicaluse.html) from which the following description is excerpted, &quot;Sex for Clinical Use is a categorization of sex derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc. This property is intended for use in clinical decision making and indicates that treatment or diagnostic tests should consider best practices associated with the relevant reference population  It describes the biological sex of an organism, which is most commonly determined based on anatomy and physiology or genetic (chromosome) analysis.  It also optionally communicates the date when the sex was determined.&quot; See the referenced extension for more information.\">Extension - Sex For Clinical Use:</td>\n                <td colspan=\"3\">\n                  <ul>\n                    <li>value: <span title=\"Codes: {http://hl7.org/fhir/us/home-lab-report/CodeSystem/codesystem-sex-for-clinical-use female}\">Female sex for clinical use</span></li>\n                  </ul>\n                </td>\n              </tr>\n            </table>\n          </div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension" : [{
+          "url" : "ombCategory",
+          "valueCoding" : {
+            "system" : "urn:oid:2.16.840.1.113883.6.238",
+            "code" : "2054-5",
+            "display" : "Black or African American"
+          }
+        },
+        {
+          "url" : "text",
+          "valueString" : "Black or African American"
+        }]
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension" : [{
+          "url" : "ombCategory",
+          "valueCoding" : {
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "code" : "UNK",
+            "display" : "Unknown"
+          }
+        },
+        {
+          "url" : "text",
+          "valueString" : "Unknown"
+        }]
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-sex-for-clinical-use",
+        "extension" : [{
+          "url" : "value",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://hl7.org/fhir/us/home-lab-report/CodeSystem/codesystem-sex-for-clinical-use",
+              "code" : "female",
+              "display" : "Female sex for clinical use"
+            }]
+          }
+        }]
+      }],
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MR",
+            "display" : "Medical Record Number"
+          }],
+          "text" : "Medical Record Number"
+        },
+        "system" : "http://hospital.reliableorg.org",
+        "value" : "P21-0000105078"
+      }],
+      "active" : true,
+      "name" : [{
+        "family" : "Trevor",
+        "given" : ["Stacy"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "947-226-0356",
+        "use" : "home"
+      }],
+      "gender" : "female",
+      "birthDate" : "1988-01-21",
+      "address" : [{
+        "line" : ["11 Norman Drive"],
+        "city" : "Palatine",
+        "district" : "Cook",
+        "state" : "IL",
+        "postalCode" : "60067",
+        "country" : "US"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.org/fhir/Specimen/specimen-swab-internal-nose-s-trevor",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "specimen-swab-internal-nose-s-trevor",
+      "meta" : {
+        "versionId" : "2",
+        "lastUpdated" : "2023-01-26T22:49:23.006+00:00",
+        "source" : "#HpMWcBBNgkCMCvwC",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n              <b>Generated Narrative: Specimen</b>\n              <a name=\"specimen-swab-internal-nose-s-trevor\"> </a>\n            </p>\n            <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">\n              <p style=\"margin-bottom: 0px\">Resource Specimen &quot;specimen-swab-internal-nose-s-trevor&quot; Version &quot;2&quot; Updated &quot;2023-01-26 22:49:23+0000&quot; </p>\n              <p style=\"margin-bottom: 0px\">Information Source: #HpMWcBBNgkCMCvwC!</p>\n              <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Specimen-at-home-in-vitro-test.html\">Specimen - At-Home In-Vitro Test</a></p>\n            </div>\n            <p><b>identifier</b>: id: P21-0000105078OneReliableSol.STAG</p>\n            <p><b>status</b>: available</p>\n            <p><b>type</b>: Swab of internal nose (specimen) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#445297001)</span></p>\n            <p><b>subject</b>: <a href=\"Patient-patient-at-home-in-vitro-test-stacy-trevor.html\">Patient/patient-at-home-in-vitro-test-stacy-trevor: Stacy Trevor</a> &quot; TREVOR&quot;</p>\n            <p><b>receivedTime</b>: 2021-01-28 16:06:03-0500</p>\n            <h3>Collections</h3>\n            <table class=\"grid\">\n              <tr>\n                <td>-</td>\n                <td>\n                  <b>Collected[x]</b>\n                </td>\n              </tr>\n              <tr>\n                <td>*</td>\n                <td>2021-01-28 16:06:03-0500</td>\n              </tr>\n            </table>\n          </div>"
+      },
+      "identifier" : [{
+        "system" : "http://reliable.org",
+        "value" : "P21-0000105078OneReliableSol.STAG"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "445297001",
+          "display" : "Swab of internal nose (specimen)"
+        }],
+        "text" : "Swab of internal nose (specimen)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-at-home-in-vitro-test-stacy-trevor",
+        "display" : "Stacy Trevor"
+      },
+      "receivedTime" : "2021-01-28T16:06:03-05:00",
+      "collection" : {
+        "collectedDateTime" : "2021-01-28T16:06:03-05:00"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.org/fhir/Device/device-hometest1-s-trevor",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "device-hometest1-s-trevor",
+      "meta" : {
+        "versionId" : "1",
+        "lastUpdated" : "2023-01-26T22:14:40.524+00:00",
+        "source" : "#Sxj8SUXVLoqUDfBx",
+        "profile" : ["http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n              <b>Generated Narrative: Device</b>\n              <a name=\"device-hometest1-s-trevor\"> </a>\n            </p>\n            <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">\n              <p style=\"margin-bottom: 0px\">Resource Device &quot;device-hometest1-s-trevor&quot; Version &quot;1&quot; Updated &quot;2023-01-26 22:14:40+0000&quot; </p>\n              <p style=\"margin-bottom: 0px\">Information Source: #Sxj8SUXVLoqUDfBx!</p>\n              <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Device-at-home-in-vitro-test.html\">Device - At-Home In-Vitro Test</a></p>\n            </div>\n            <h3>UdiCarriers</h3>\n            <table class=\"grid\">\n              <tr>\n                <td>-</td>\n                <td>\n                  <b>DeviceIdentifier</b>\n                </td>\n                <td>\n                  <b>Issuer</b>\n                </td>\n              </tr>\n              <tr>\n                <td>*</td>\n                <td>Acme COVID-19 Home Test_Acme Limited_EUA</td>\n                <td>\n                  <code>GS1</code>\n                </td>\n              </tr>\n            </table>\n            <p><b>status</b>: active</p>\n            <p><b>manufacturer</b>: ACME CORPORATION</p>\n            <p><b>expirationDate</b>: 2022-11-20</p>\n            <p><b>lotNumber</b>: 7654321F</p>\n            <p><b>serialNumber</b>: 10987654d323</p>\n            <h3>DeviceNames</h3>\n            <table class=\"grid\">\n              <tr>\n                <td>-</td>\n                <td>\n                  <b>Name</b>\n                </td>\n                <td>\n                  <b>Type</b>\n                </td>\n              </tr>\n              <tr>\n                <td>*</td>\n                <td>Acme COVID-19 Home Test_Acme Limited</td>\n                <td>model-name</td>\n              </tr>\n            </table>\n            <p><b>modelNumber</b>: 20388</p>\n            <p><b>partNumber</b>: 20388</p>\n          </div>"
+      },
+      "udiCarrier" : [{
+        "deviceIdentifier" : "Acme COVID-19 Home Test_Acme Limited_EUA",
+        "issuer" : "GS1"
+      }],
+      "status" : "active",
+      "manufacturer" : "ACME CORPORATION",
+      "expirationDate" : "2022-11-20",
+      "lotNumber" : "7654321F",
+      "serialNumber" : "10987654d323",
+      "deviceName" : [{
+        "name" : "Acme COVID-19 Home Test_Acme Limited",
+        "type" : "model-name"
+      }],
+      "modelNumber" : "20388",
+      "partNumber" : "20388"
+    }
+  }]
+}
