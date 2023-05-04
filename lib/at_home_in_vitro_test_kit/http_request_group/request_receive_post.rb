@@ -20,13 +20,15 @@ module AtHomeInVitroTestKit
         wait(
             identifier: session_id,
             message: %(
-                Make a request to this endpoint within the next 30 minutes.
+                Make a request to this endpoint within the next 24 hours.
 
                 #{Inferno::Application['base_url']}/custom/at_home_test_kit/bundle?id=#{session_id}
 
+                If the test times out or is cancelled for any reason, rerunning the test group will restart the timeout.
+
                 Your request body MUST be your FHIR Bundle in raw json format. Testing will resume automatically after a valid POST is received.
             ),
-            timeout: 1800
+            timeout: 86400
         )
       end
     end
