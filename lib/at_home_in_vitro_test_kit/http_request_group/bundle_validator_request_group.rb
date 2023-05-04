@@ -2,7 +2,7 @@ require_relative 'request_fhir_bundle_validation'
 require_relative 'request_fhir_bundle_entry_validation'
 require_relative 'request_receive_post'
 
-module AtHomeTestKit
+module AtHomeInVitroTestKit
   class BundleValidatorRequestGroup< Inferno::TestGroup
 
     title 'At-Home In-Vitro Test'

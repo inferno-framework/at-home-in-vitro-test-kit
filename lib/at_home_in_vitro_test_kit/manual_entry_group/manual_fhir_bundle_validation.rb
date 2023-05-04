@@ -1,8 +1,8 @@
 require_relative '../test_common/fhir_bundle_validation'
 
-module AtHomeTestKit
+module AtHomeInVitroTestKit
     class ManualFhirBundleValidation < Inferno::Test
-        include AtHomeTestKit::FhirBundleValidator
+        include AtHomeInVitroTestKit::FhirBundleValidator
       title 'FHIR Bundle Validation'
       description %(
         Validate that the FHIR Bundle conforms to the At-Home In-Vitro Test Report IG specification.

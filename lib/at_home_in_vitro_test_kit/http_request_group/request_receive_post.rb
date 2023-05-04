@@ -1,9 +1,9 @@
 require_relative '../test_common/fhir_bundle_validation'
 require 'inferno'
 
-module AtHomeTestKit
+module AtHomeInVitroTestKit
     class RequestReceivePost < Inferno::Test
-        include AtHomeTestKit::FhirBundleValidator
+        include AtHomeInVitroTestKit::FhirBundleValidator
       title 'Receive FHIR Bundle via POST request.'
       description %(
         Confirm that App Server or Data Hub correctly passes a FHIR bundle to the At-Home In-Vitro test kit.

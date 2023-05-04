@@ -1,7 +1,7 @@
 require_relative 'manual_fhir_bundle_validation'
 require_relative 'manual_fhir_bundle_entry_validation'
 
-module AtHomeTestKit
+module AtHomeInVitroTestKit
   class BundleValidatorManualEntry < Inferno::TestGroup
 
     title 'At-Home In-Vitro Manual Input Test'

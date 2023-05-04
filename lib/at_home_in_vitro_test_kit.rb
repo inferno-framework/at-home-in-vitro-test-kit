@@ -1,6 +1,6 @@
-require_relative 'at_home_in_vitro/manual_entry_group/bundle_validator_manual_entry'
-require_relative 'at_home_in_vitro/http_request_group/bundle_validator_request_group'
-module AtHomeTestKit
+require_relative 'at_home_in_vitro_test_kit/manual_entry_group/bundle_validator_manual_entry'
+require_relative 'at_home_in_vitro_test_kit/http_request_group/bundle_validator_request_group'
+module AtHomeInVitroTestKit
   require 'inferno'
   class Suite < Inferno::TestSuite
     id :at_home_test_kit
