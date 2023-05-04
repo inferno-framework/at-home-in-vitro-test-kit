@@ -1,5 +1,5 @@
 
-module AtHomeTestKit
+module AtHomeInVitroTestKit
     module FhirBundleValidator
         def validate_bundle(resource)
 
