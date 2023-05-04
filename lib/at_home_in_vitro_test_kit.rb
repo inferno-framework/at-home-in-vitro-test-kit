@@ -24,6 +24,21 @@ module AtHomeInVitroTestKit
       request.query_parameters["id"]
     end
 
+    links [
+      {
+        label: 'Report Issue',
+        url: 'https://github.com/inferno-framework/at-home-in-vitro-test-kit/issues'
+      },
+      {
+        label: 'Open Source',
+        url: 'https://github.com/inferno-framework/at-home-in-vitro-test-kit/'
+      },
+      {
+        label: 'At-Home In-Vitro Test Report IG',
+        url: 'http://hl7.org/fhir/us/home-lab-report/STU1/'
+      }
+    ]
+
     group from: :bundle_validator_request_group
     group from: :bundle_validator_manual_entry
   end
