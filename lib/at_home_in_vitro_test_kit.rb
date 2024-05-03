@@ -9,8 +9,6 @@ module AtHomeInVitroTestKit
 
     # All FHIR validation requsets will use this FHIR validator
     fhir_resource_validator do
-      url ENV.fetch('FHIR_RESOURCE_VALIDATOR_URL', 'http://hl7_validator_service:3500')
-
       igs 'hl7.fhir.us.home-lab-report#1.0.0'
 
       exclude_message do |message|
