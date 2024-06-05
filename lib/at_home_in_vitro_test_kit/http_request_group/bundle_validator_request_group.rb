@@ -50,7 +50,7 @@ module AtHomeInVitroTestKit
     * [Device](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test)
     * [DiagnosticSupport](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results)
     * [Observation -At-Home In-Vitro Test Result](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result)
-    * [Observation -Pateint Question Answer](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer)
+    * [Observation -Patient Question Answer](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer)
     * [Patient](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test)
     * [Specimen](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test)
     )
