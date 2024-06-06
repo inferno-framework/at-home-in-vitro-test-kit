@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     at_home_in_vitro_test_kit (0.9.0)
-      inferno_core (~> 0.4.4)
+      inferno_core (~> 0.4.37)
 
 GEM
   remote: https://rubygems.org/
