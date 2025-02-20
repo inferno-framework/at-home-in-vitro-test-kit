@@ -1,10 +1,12 @@
-# Inferno Template
+# At-Home In-Vitro Test Kit
 
-This is a template repository for an
-[Inferno](https://github.com/inferno-community/inferno-core) test kit.
+The At-Home In-Vitro Test Kit provides an executable set of tests for the
+[At-Home In-Vitro Test Implementation Guide v1.0.0](https://hl7.org/fhir/us/home-lab-report/STU1/).
+This test kit validates At-Home In-Vitro FHIR Bundles and their entry
+resources.
 
 ## Documentation
-- [Inferno documentation](https://inferno-framework.github.io/inferno-core/)
+- [Inferno documentation](https://inferno-framework.github.io)
 - [Ruby API documentation](https://inferno-framework.github.io/inferno-core/docs)
 - [JSON API documentation](https://inferno-framework.github.io/inferno-core/api-docs)
 
@@ -18,7 +20,7 @@ This is a template repository for an
   `docker-compose.background.yml`.
   This will ensure that the validator has access to the resources needed to
   validate resources against your IG.
-  
+
 All tests you write should go in the `lib` folder, which currently contains some
 example tests. Refer to the [Inferno
 documentation](https://inferno-framework.github.io/inferno-core/) for more
@@ -176,10 +178,10 @@ like a standard ruby gem (ruby libraries are called gems).
   rubygems](https://guides.rubygems.org/publishing/#publishing-to-rubygemsorg)
   and then run `gem build *.gemspec` and `gem push *.gem`.
 
-## Example Inferno test kits
+## Example Inferno Test Kits
 
-- https://github.com/inferno-community/ips-test-kit
-- https://github.com/inferno-community/shc-vaccination-test-kit
+- https://github.com/inferno-framework/ips-test-kit
+- https://github.com/inferno-framework/shc-vaccination-test-kit
 
 ## License
 
