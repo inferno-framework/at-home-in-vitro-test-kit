@@ -3,7 +3,8 @@
 source "https://rubygems.org"
 
 gemspec
-gem 'foreman'
+
 group :development, :test do
   gem 'debug'
+  gem 'rack-test'
 end

@@ -34,6 +34,10 @@ module AtHomeInVitroTestKit
         url: 'https://github.com/inferno-framework/at-home-in-vitro-test-kit/'
       },
       {
+        label: 'Download',
+        url: 'https://github.com/inferno-framework/at-home-in-vitro-test-kit/releases'
+      },
+      {
         label: 'At-Home In-Vitro Test Report IG',
         url: 'http://hl7.org/fhir/us/home-lab-report/STU1/'
       }
