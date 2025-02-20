@@ -22,7 +22,7 @@ module AtHomeInVitroTestKit
       and freely available for use or adoption by the health IT community
       including EHR vendors, health app developers, and testing labs. It is
       built using the
-      [Inferno Framework]().
+      [Inferno Framework](https://inferno-framework.github.io/).
       The Inferno Framework is designed for reuse and aims to make it easier
       to build test kits for any FHIR-based data exchange.
 
