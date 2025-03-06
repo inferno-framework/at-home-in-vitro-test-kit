@@ -1,3 +1,5 @@
+require_relative 'version'
+
 module AtHomeInVitroTestKit
   class Metadata < Inferno::TestKit
     id :at_home_in_vitro_test_kit
