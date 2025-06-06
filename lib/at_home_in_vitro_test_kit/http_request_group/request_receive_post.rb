@@ -6,7 +6,35 @@ module AtHomeInVitroTestKit
         include AtHomeInVitroTestKit::FhirBundleValidator
       title 'Receive FHIR Bundle via POST request.'
       description %(
-        Confirm that App Server or Data Hub correctly passes a FHIR bundle to the At-Home In-Vitro test kit.
+        This test verifies that an App Server or Data Hub can successfully submit a FHIR Bundle to the At-Home In-Vitro test kit via HTTP POST request.
+        
+        # Test Process
+        
+        1. The test generates a unique endpoint URL for receiving the FHIR Bundle
+        2. The test waits for a POST request to this endpoint (timeout: 24 hours)
+        3. When a request is received, it verifies:
+           * The request includes the correct session identifier
+           * The Content-Type header is 'application/json'
+           * The request body contains valid JSON
+        
+        # Request Requirements
+        
+        The POST request must meet these requirements:
+        * URL: The provided endpoint URL
+        * Query Parameter: 'id' matching the session identifier
+        * Headers:
+          - Content-Type: application/json
+        * Body: Raw JSON FHIR Bundle
+        
+        # Error Handling
+        
+        The test will fail if:
+        * The session identifier is missing or incorrect
+        * The Content-Type header is missing or incorrect
+        * The request body is not valid JSON
+        * No request is received within 24 hours
+        
+        If the test fails, you can rerun it to get a new endpoint URL and timeout period.
       )
       id :request_receive_post
 
