@@ -4,7 +4,6 @@ Gem::Specification.new do |spec|
   spec.name          = 'at_home_in_vitro_test_kit'
   spec.version       = AtHomeInVitroTestKit::VERSION
   spec.authors       = ['Inferno Team']
-  spec.email         = ['inferno@groups.mitre.org']
   spec.date          = Time.now.utc.strftime('%Y-%m-%d')
   spec.summary       = 'Inferno tests for the At Home In Vitro IG'
   spec.description       = 'Inferno tests for the At Home In Vitro IG'
