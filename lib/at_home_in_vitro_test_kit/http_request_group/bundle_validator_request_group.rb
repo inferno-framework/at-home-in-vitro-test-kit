@@ -10,18 +10,25 @@ module AtHomeInVitroTestKit
     description %(
     # Background
   
-    The At-Home In-Vitro Test sequence verifies that
-    a At-Home In-Vitro FHIR Bundle and its entries, constructed either manually or by
-    a digital testing application, can be sent via a POST request and conforms to the resource profile
-    outlined in the [At-Home In-Vitro FHIR Implementation Guide](http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7.fhir.us.home-lab-report).
+    The At-Home In-Vitro Test sequence validates FHIR Bundles that are submitted via HTTP POST requests.
+    The test ensures that submitted bundles conform to the resource profiles defined in the
+    [At-Home In-Vitro FHIR Implementation Guide](http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7.fhir.us.home-lab-report).
+    This validation process is critical for ensuring data quality and interoperability in home-based laboratory testing scenarios.
   
     # Testing Methodology
-    ## POST Request verification
+    ## POST Request Requirements
         
-    The first test in this sequence prepares the kit for POST request handling. The user will enter an input string identifier for this test session
-    and will be prompted with a message about the Inferno endpoint a POST request should be sent to. The request MUST include 'id=<INPUT VALUE>' as
-    a query parameter so the test kit can associate a POST with a particular testing session. The FHIR bundle MUST be sent as raw JSON in the body
-    of the POST request.
+    The first test in this sequence prepares the kit for POST request handling:
+
+    1. The user provides a unique identifier for their test session
+    2. The test kit provides an Inferno endpoint URL for submitting the POST request
+    3. The POST request must include:
+       * Query parameter: 'id=<session_identifier>'
+       * Content-Type header: 'application/json'
+       * Body: Raw JSON FHIR Bundle
+    4. The test kit associates the received bundle with the test session for validation
+
+    If any of these requirements are not met, the test will fail with specific error messages indicating which requirements were not satisfied.
 
     ## Bundle Validation
   
@@ -31,14 +38,18 @@ module AtHomeInVitroTestKit
   
     According to the Profile description, a valid Bundle MUST contain the following elements:
   
-    * identifier - Persistent identifier for the bundle
+    * identifier - Persistent identifier for the bundle (UUID format recommended)
     * type - fixed value code that identifies the bundle type ('message')
-    * timestamp - identifies time that the bundle was assembled
+    * timestamp - identifies time that the bundle was assembled (ISO 8601 format)
     * entry:messageHeader - bundle entry and resource of type [MessageHeader](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results)
   
     While a MessageHeader entry is required for all bundles to conform, a bundle
     may contain multiple entry resources that conform to other resource profiles outlined
-    in the IG.
+    in the IG. The validation process includes checking for:
+    * Correct data types for each field
+    * Required elements presence
+    * Valid code system values
+    * Proper resource references
   
     ## Entry Validation
   
@@ -47,12 +58,14 @@ module AtHomeInVitroTestKit
     profile outlined in the IG. Entry types that can be validated (aside from MessageHeader) include
     the following:
   
-    * [Device](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test)
-    * [DiagnosticSupport](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results)
-    * [Observation -At-Home In-Vitro Test Result](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result)
-    * [Observation -Patient Question Answer](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer)
-    * [Patient](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test)
-    * [Specimen](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test)
+    * [Device](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test) - Represents the testing device used
+    * [DiagnosticReport](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results) - Contains the overall test report
+    * [Observation -At-Home In-Vitro Test Result](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result) - Individual test results
+    * [Observation -Patient Question Answer](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer) - Patient-provided information
+    * [Patient](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test) - Information about the person tested
+    * [Specimen](http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test) - Details about the collected sample
+
+    Each resource is validated against its specific profile requirements, ensuring all mandatory elements are present and correctly formatted. The test will provide detailed feedback for any validation errors encountered.
     )
     id :bundle_validator_request_group
 

@@ -12,10 +12,10 @@ module AtHomeInVitroTestKit
     authors ['Inferno Team']
     repo 'https://github.com/inferno-framework/at-home-in-vitro-test-kit'
     description <<~DESCRIPTION
-      The At-Home In-Vitro Test Kit provides an executable set of tests for the
-      [At-Home In-Vitro Test Implementation Guide v1.0.0](https://hl7.org/fhir/us/home-lab-report/STU1/).
-      This test kit validates At-Home In-Vitro FHIR Bundles and their entry
-      resources.
+      The At-Home In-Vitro Test Kit provides a comprehensive set of tests for validating
+      FHIR resources against the [At-Home In-Vitro Test Implementation Guide v1.0.0](https://hl7.org/fhir/us/home-lab-report/STU1/).
+      This test kit supports both manual input validation and automated HTTP POST request validation
+      of At-Home In-Vitro FHIR Bundles and their entry resources.
   
       <!-- break -->
 
@@ -30,19 +30,26 @@ module AtHomeInVitroTestKit
 
       ## Status
   
-      The At-Home In-Vitro tests verify that an At-Home In-Vitro FHIR Bundle
-      and its entries, constructed either manually or by a digital testing
-      application, conform to the resource profiles as defined in the
-      implementation guide.
-  
-      The test kit currently tests the following requirements:
-  
-      - FHIR Bundle POST Request Verification
-      - FHIR Bundle Validation
-      - Entry Validation
-  
-      See the test descriptions within the test kit for detail on the specific
-      validations performed as part of testing these requirements.
+      The At-Home In-Vitro Test Kit provides two primary testing pathways:
+      
+      1. Manual Entry Testing - Allows direct input of FHIR Bundles for validation
+      2. HTTP Request Testing - Validates FHIR Bundles received via POST requests
+      
+      Both pathways perform comprehensive validation including:
+      
+      - Bundle Structure Validation - Verifies the Bundle conforms to the At-Home In-Vitro Bundle profile
+      - Required Elements Validation - Checks for mandatory elements like identifier, type, timestamp, and MessageHeader
+      - Entry Resource Validation - Validates each resource entry against its respective profile:
+        * MessageHeader
+        * Device
+        * DiagnosticReport
+        * Observation (Test Result and Patient Question Answer)
+        * Patient
+        * Specimen
+      
+      The test kit ensures that resources conform to the profiles defined in the
+      implementation guide, including structure, required elements, value sets,
+      and relationships between resources.
 
       ## Repository
   
